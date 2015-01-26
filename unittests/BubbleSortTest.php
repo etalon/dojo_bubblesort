@@ -9,10 +9,10 @@ class BubbleSortTest extends PHPUnit_Framework_TestCase
 
     public function testSortedArrayAscendingOrder()
     {
-        $this->testSortedArrayOrder(SortMode::Ascending);
+        $this->doSortedArrayOrder(SortMode::Ascending);
     }
 
-    function testSortedArrayOrder($p_SortMode = SortMode::Descending)
+    function doSortedArrayOrder($p_SortMode = SortMode::Descending)
     {
 
         $sorted = doSort($this->unsorted, $p_SortMode);
@@ -37,7 +37,7 @@ class BubbleSortTest extends PHPUnit_Framework_TestCase
 
     public function testSortedArrayDescendingOrder()
     {
-        $this->testSortedArrayOrder(SortMode::Descending);
+        $this->doSortedArrayOrder(SortMode::Descending);
     }
 
 }
